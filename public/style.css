@@ -1,0 +1,53 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
+#presentation {
+    text-align: center;
+    padding: 20px;
+}
+
+#status-items {
+    margin: 0 auto;
+    margin-top: 5vh;
+    max-width: 90vw;
+}
+
+.operational {
+    color: #13af13;
+}
+
+.operational::before {
+    content: "";
+    display: block;
+    background: url('assets/success.png') no-repeat;
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.unoperational {
+    color: red;
+}
+
+.unoperational::before {
+    content: "";
+    display: block;
+    background: url('assets/fail.png') no-repeat;
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.container {
+    /* max-width: 80vw; */
+    padding: 20px;
+    margin-bottom: 5vh !important;
+}
+
+.container-status {
+    display: flex;
+    justify-content: space-between;
+}
